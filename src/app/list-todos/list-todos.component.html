@@ -1,0 +1,65 @@
+
+<div class="alert alert-success" *ngIf='message'>{{message}}</div>
+<h1>Please Add expenses in corresponding category</h1> <br>
+<div>
+<div class="container">
+  
+        <th>Shopping</th> 
+        Expenses: <input type="text" name="shopexpenses" [(ngModel)]="shopexpenses">
+       Date:  <input type="date" name="shopdate" [(ngModel)]="shopdate">
+
+
+      
+  <div class="row">
+      <button (click)="addTodo(shopexpenses,shopdate,1)" class="btn btn-success">Add</button>
+
+    </div>
+  <br>
+</div>
+    
+  <th>Food and Dining</th>  
+  Expenses: <input type="text" name="foodexpenses" [(ngModel)]="foodexpenses">
+  Date:  <input type="date" name="foodate" [(ngModel)]="foodate">
+
+
+<div class="row">
+    <button (click)="addTodo(foodexpenses,foodate,2)" class="btn btn-success">Add</button>
+  </div>
+
+<br>
+<div>
+<th>Travel</th>
+Expenses: <input type="text" name="travelexpenses" [(ngModel)]="travelexpenses">
+Date:  <input type="date" name="traveldate" [(ngModel)]="traveldate">
+
+
+<div class="row">
+    <button (click)="addTodo(travelexpenses,traveldate,3)" class="btn btn-success">Add</button>
+  </div>
+<br>
+</div>
+<th>Entertainment</th>
+
+Expenses: <input type="text" value="20-04-2019" name="enterexpenses" [(ngModel)]="enterexpenses">
+Date:  <input type="date" name="enterdate" [(ngModel)]="enterdate">
+
+
+<div class="row">
+    <button (click)="addTodo(enterexpenses,enterdate,4)" class="btn btn-success">Add</button>
+  </div>
+<br>
+
+<th>Miscellaneous</th>
+Expenses: <input type="text" name="miscexpenses" [(ngModel)]="miscexpenses">
+Date:  <input type="date" name="miscdate" [(ngModel)]="miscdate">
+
+
+<div class="row">
+    <button (click)="addTodo(miscexpenses,miscdate,5)" class="btn btn-success">Add</button>
+  </div>
+<br>
+
+
+   
+
+</div>

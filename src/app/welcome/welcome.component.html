@@ -1,0 +1,17 @@
+<H1>Welcome!</H1>
+
+
+<div class="container">
+  <h6>Please set your Budget : <input type="text" name="budget" [(ngModel)]="budget" placeholder="set your Budget">
+  </h6>
+ <button (click)=setBudget() class="btn btn-success">Add</button>
+ 
+ <p>{{ budgetAddedMessage }}</p>
+ 
+ </div>
+
+ 
+<div class="container">
+  Welcome {{name}}. You can manage your Expenses here <a routerLink="/todos">here</a>
+</div>
+
